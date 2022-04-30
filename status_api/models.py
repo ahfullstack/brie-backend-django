@@ -5,4 +5,5 @@ from django.db import models
 class Status(models.Model):
     name = models.CharField(null=True, blank=True,max_length=32)
     description = models.CharField(null=True, blank=True,max_length=200)
-    symptoms = ArrayField(ArrayField(models.IntegerField()))
+    symptoms = ArrayField(ArrayField(models.CharField(max_length=10, blank=True),
+            size=20))
