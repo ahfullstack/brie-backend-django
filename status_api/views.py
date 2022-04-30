@@ -6,6 +6,6 @@ class StatusList(generics.ListCreateAPIView):
     queryset = Status.objects.all().order_by('id') # tell django how to retrieve all objects from the DB, order by id ascending
     serializer_class = StatusSerializer # tell django what serializer to use
 
-class ContactDetail(generics.RetrieveUpdateDestroyAPIView):
+class StatusDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Status.objects.all().order_by('id')
     serializer_class = StatusSerializer
