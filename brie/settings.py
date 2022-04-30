@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'brie.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'p4',
+        'NAME': 'briedjango',
         'USER': 'postgres',
         'PASSWORD': 'ganggang',
         'HOST': 'localhost'
