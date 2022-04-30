@@ -73,8 +73,7 @@ TEMPLATES = [
     },
 ]
 
-db_from_env = dj_database_url.config(conn_max_age=600) # add this
-DATABASES['default'].update(db_from_env) # add this
+
 CORS_ALLOW_ALL_ORIGINS = True # add this
 
 
@@ -93,7 +92,8 @@ DATABASES = {
         'HOST': 'localhost'
     }
 }
-
+db_from_env = dj_database_url.config(conn_max_age=600) # add this
+DATABASES['default'].update(db_from_env) # add this
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
