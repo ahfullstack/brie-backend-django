@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-1+y-w3ww-rt-*(1oqar^nd79s1kxjeq!%ienp(hwrt0e+ifc**
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['brie-server-django.herokuapp.com/','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['brie-server-django.herokuapp.com','localhost', '127.0.0.1']
 
 
 # Application definition
